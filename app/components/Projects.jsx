@@ -13,7 +13,7 @@ const projects = [
     img: "/pictures/prompt.png",
     title: "Prompt Topia: share your idea",
     desc: "this project is for sharing your idea and tought to others.",
-    lang: { next: true, mongo: true, tailwind: true, js: true },
+    lang: { next: true, react: true, mongo: true, tailwind: true, js: true },
     github: "https://github.com/mohmdtn/prompt-app",
     demo: "https://prompt-app-one.vercel.app/",
   },

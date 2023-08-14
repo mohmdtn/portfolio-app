@@ -8,6 +8,7 @@
 
   /* colors */
   --purple: #4c1d95;
+  --purple-light: #A78BFA;
   --dark: #262626;
   --smoky: #737373;
   --dark-smoky: #525252;
@@ -39,11 +40,13 @@ nav {
 nav .links a {
   color: var(--dark);
   text-decoration: none;
+  text-transform: capitalize;
   margin: 0 15px;
 }
 
 nav .theme {
-  all: unset;
+  color: var(--dark);
+  font-size: 20px;
 }
 
 .hero {
@@ -65,6 +68,11 @@ nav .theme {
 
 .hero .buttons a svg {
   font-size: 20px;
+}
+
+.hero .buttons a .icon {
+  min-width: 44px;
+  padding: 8px;
 }
 
 .hero .scroll {
@@ -125,4 +133,80 @@ nav .theme {
   font-size: 24px;
   color: var(--dark);
   margin-right: 16px;
+}
+
+.summary {
+  max-width: 1088px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.summary h4 {
+  font-size: 34px;
+  font-family: "Sora";
+  font-weight: bold;
+  margin-bottom: 19px;
+}
+
+.summary p {
+  font-size: 20px;
+  color: var(--dark);
+  margin-bottom: 19px;
+}
+
+.summary .rectangle {
+  width: 369px;
+  height: 500px;
+  background-color: var(--purple-light);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.summary img {
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  right: 20px;
+  top: 20px;
+}
+
+footer {
+  max-width: 904px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+footer h4 {
+  font-size: 28px;
+  font-family: "Sora";
+  font-weight: bold;
+}
+
+footer .buttons button {
+  min-width: 44px;
+  height: 44px;
+  padding: 8px;
+  background-color: var(--dark);
+  color: #fff;
+  font-size: 20px;
+}
+
+footer h6 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+footer p {
+  font-size: 16px;
+  color: var(--smoky);
+  text-align: center;
+}
+
+footer .back-top {
+  color: var(--dark);
+}
+
+footer .back-top svg {
+  font-size: 20px;
 }

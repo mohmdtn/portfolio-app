@@ -32,8 +32,8 @@ export const ProjectCard = ({ img, desc, title, lang, github, demo }) => {
           </div>
           <div className="links">
             <Stack direction="row" spacing={2}>
-              <Link href={github}><Button sx={{bgcolor: "#8B5CF6"}} variant="contained" color="secondary">VIEW CODE</Button></Link>
-              <Link href={demo}><Button sx={{borderColor: "#8B5CF6", color: "#000"}} variant="outlined" color="secondary">LIVE DEMO</Button></Link>
+              <Link href={github} target="_blank"><Button sx={{bgcolor: "#8B5CF6"}} variant="contained" color="secondary">VIEW CODE</Button></Link>
+              <Link href={demo} target="_blank"><Button sx={{borderColor: "#8B5CF6", color: "#000"}} variant="outlined" color="secondary">LIVE DEMO</Button></Link>
             </Stack>
           </div>
         </section>

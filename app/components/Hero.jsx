@@ -19,8 +19,8 @@ export const Hero = () => {
 
           <div className="buttons">
             <Stack direction="row" spacing={2}>
-              <Link href=""><Button sx={{bgcolor: "#7C3AED"}} variant="contained" color="secondary" className="py-2"><BsGithub /></Button></Link>
-              <Link href=""><Button sx={{bgcolor: "#7C3AED"}} variant="contained" color="secondary" className="py-2"><BsLinkedin /></Button></Link>
+              <Link href="https://github.com/mohmdtn" target="_blank"><Button sx={{bgcolor: "#7C3AED"}} variant="contained" color="secondary" className="py-2 icon"><BsGithub /></Button></Link>
+              <Link href="https://linkedin.com/in/mohammad-taghinasab" target="_blank"><Button sx={{bgcolor: "#7C3AED"}} variant="contained" color="secondary" className="py-2 icon"><BsLinkedin /></Button></Link>
               <Link href=""><Button sx={{borderColor: "#7C3AED", color: "#000"}} variant="outlined" color="secondary">GET IN TOUCH</Button></Link>
               <Link href=""><Button sx={{borderColor: "#7C3AED", color: "#000"}} variant="outlined" color="secondary">RESOME</Button></Link>
             </Stack>

@@ -1,6 +1,6 @@
-import React from "react";
 import Link from "next/link";
 import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
 import { FiSun } from "react-icons/fi";
 
 export const Nav = () => {
@@ -14,7 +14,7 @@ export const Nav = () => {
           <Button color="secondary"><Link href="/about">About</Link></Button>
           <Button color="secondary"><Link href="">Resume</Link></Button>
         </div>
-        <button type="button" className="theme ms-4"><FiSun /></button>
+        <IconButton color="secondary" className="theme ms-4"><FiSun /></IconButton>
       </div>
     </nav>
   );
