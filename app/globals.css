@@ -10,6 +10,9 @@
   --purple: #4c1d95;
   --dark: #262626;
   --smoky: #737373;
+  --dark-smoky: #525252;
+  --light: #FAFAFA;
+
 }
 
 html,
@@ -25,7 +28,6 @@ body {
   direction: ltr;
   text-align: left;
   padding: 30px;
-  padding-bottom: 0;
 }
 
 nav {
@@ -80,4 +82,47 @@ nav .theme {
 .hero .scroll svg {
   font-size: 18px;
   color: var(--dark);
+}
+
+.projects {
+  max-width: 1088px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.projects h1 {
+  font-size: 56px;
+  font-weight: bold;
+  font-family: "Sora";
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project-item {
+  border: 1px solid #E8E8E8;
+  border-radius: 2px;
+  background-color: var(--light);
+}
+
+.project-item h4 {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Sora";
+  margin-bottom: 16px;
+}
+
+.project-item p {
+  font-size: 16px;
+  color: var(--dark-smoky);
+  margin-bottom: 0;
+}
+
+.project-item .languages {
+  margin: 24px 0;
+}
+
+.project-item .languages svg {
+  font-size: 24px;
+  color: var(--dark);
+  margin-right: 16px;
 }
