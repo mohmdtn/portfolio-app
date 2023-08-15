@@ -10,7 +10,7 @@ import { SiteContext } from "../context/site-context";
 import { BsGithub, BsLinkedin, BsArrowDownCircle } from "react-icons/bs";
 
 export const Hero = () => {
-  const { setIsResumeModal } = React.useContext(SiteContext);
+  const { setIsResumeModal, theme } = React.useContext(SiteContext);
 
   return (
     <section className="hero">
@@ -24,17 +24,17 @@ export const Hero = () => {
 
           <div className="buttons">
             <Stack direction="row" spacing={2}>
-              <Link href="https://github.com/mohmdtn" target="_blank"><Button sx={{bgcolor: "#7C3AED"}} variant="contained" color="secondary" className="py-2 icon"><BsGithub /></Button></Link>
-              <Link href="https://linkedin.com/in/mohammad-taghinasab" target="_blank"><Button sx={{bgcolor: "#7C3AED"}} variant="contained" color="secondary" className="py-2 icon"><BsLinkedin /></Button></Link>
-              <Link href=""><Button sx={{borderColor: "#7C3AED", color: "#000"}} variant="outlined" color="secondary">GET IN TOUCH</Button></Link>
-              <Button onClick={() => setIsResumeModal(true)} sx={{borderColor: "#7C3AED", color: "#000"}} variant="outlined" color="secondary">RESOME</Button>
+              <Link href="https://github.com/mohmdtn" target="_blank"><Button sx={theme == "light" ? { bgcolor:"#7C3AED" } : { bgcolor:"#DDD6FE", color: "#000" }} variant="contained" color="secondary" className="py-2 icon"><BsGithub /></Button></Link>
+              <Link href="https://linkedin.com/in/mohammad-taghinasab" target="_blank"><Button sx={theme == "light" ? { bgcolor:"#7C3AED" } : { bgcolor:"#DDD6FE", color: "#000" }} variant="contained" color="secondary" className="py-2 icon"><BsLinkedin /></Button></Link>
+              <Link href=""><Button sx={theme == "light" ? {borderColor: "#7C3AED", color: "#000"} : {borderColor: "#737373", color: "#fff"}} variant="outlined" color="secondary">GET IN TOUCH</Button></Link>
+              <Button onClick={() => setIsResumeModal(true)} sx={theme == "light" ? {borderColor: "#7C3AED", color: "#000"} : {borderColor: "#737373", color: "#fff"}} variant="outlined" color="secondary">RESOME</Button>
             </Stack>
           </div>
         </div>
 
         {/* hero picture */}
         <div className="col-md-5 pe-0 d-flex flex-column justify-content-center align-items-center">
-          <Image src={"/pictures/hero.png"} width={450} height={450} layout="responsive" />
+          <Image src={"/pictures/hero.png"} width={450} height={450} layout="responsive" alt="mohammad taghinasab" />
         </div>
 
         {/* scroll */}

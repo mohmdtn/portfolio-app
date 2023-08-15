@@ -13,7 +13,7 @@ export const Nav = () => {
 
   return (
     <nav>
-      <h2 className="fw-bold mb-0">ms.</h2>
+      <h2 className="fw-bold mb-0">ms<span>.</span></h2>
       <div className="d-flex ">
         <div className="links">
           <Button color="secondary"><Link href="/">Home</Link></Button>
@@ -21,7 +21,11 @@ export const Nav = () => {
           <Button color="secondary"><Link href="/about">About</Link></Button>
           <Button onClick={() => setIsResumeModal(true)} color="secondary"><span>Resume</span></Button>
         </div>
-        <IconButton onClick={() => setTheme("dark")} color="secondary" className="theme ms-4">{theme == "light" ? <FiSun /> : <FiMoon /> }</IconButton>
+        {
+          theme == "light"
+          ? <IconButton onClick={() => setTheme("dark")} color="secondary" className="theme ms-4"><FiSun /> </IconButton>
+          : <IconButton onClick={() => setTheme("light")} color="secondary" className="theme ms-4"><FiMoon /></IconButton>
+        }
       </div>
     </nav>
   );

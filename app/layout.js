@@ -1,14 +1,8 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
 
-import { Nav } from "./components/Nav";
-import { Footer } from "./components/Footer";
-
-import { Inter } from "next/font/google";
-import { ResumeModal } from "./components/ResumeModal";
-import { SiteProvider, SiteContext } from "./context/site-context";
-
-const inter = Inter({ subsets: ["latin"] });
+import { SiteProvider } from "./context/site-context";
+import { Provider } from "./components/Provider";
 
 export const metadata = {
   title: "mohammad taghinasab",
@@ -16,17 +10,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const { theme } = React.useContext(SiteContext);
 
   return (
     <SiteProvider>
       <html lang="en">
-        <body className={`${inter.className} ${theme}`} >
-          <Nav />
-          <ResumeModal />
+        <Provider>
           {children}
-          <Footer />
-        </body>
+        </Provider>
       </html>
     </SiteProvider>
   );

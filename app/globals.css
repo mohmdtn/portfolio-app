@@ -14,6 +14,11 @@
   --dark-smoky: #525252;
   --light: #FAFAFA;
 
+  --dark-mood: #171717;
+  --dark-mood-dark: #525252;
+  --dark-mood-purple: #C4B5FD;
+  --dark-mood-purple-light: #DDD6FE;
+
 }
 
 html,
@@ -29,12 +34,17 @@ body {
   direction: ltr;
   text-align: left;
   padding: 30px;
+  background-color: var(--light);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav h2 span {
+  color: var(--purple-light);
 }
 
 nav .links a, nav .links span {
@@ -112,6 +122,10 @@ nav .theme {
   background-color: var(--light);
 }
 
+.project-item img {
+  width: 100%;
+}
+
 .project-item h4 {
   font-size: 26px;
   font-weight: bold;
@@ -150,7 +164,6 @@ nav .theme {
 
 .summary p {
   font-size: 20px;
-  color: var(--dark);
   margin-bottom: 19px;
 }
 
@@ -301,11 +314,46 @@ footer .back-top svg {
   color: #00758f;
 }
 
-
 .box h1 {
   font-size: 32px;
   font-weight: bold;
   font-family: "Sora";
   margin-bottom: 20px;
   text-align: center;
+}
+
+.dark {
+  background-color: var(--dark-mood);
+  color: var(--light);
+}
+
+.dark .box {
+  background-color: var(--dark-mood-dark);
+  color: var(--light);
+}
+
+.dark nav .links a, .dark nav .links span, .dark nav .theme, .dark .hero .scroll svg, .dark .project-item p, .dark .project-item .languages svg, .dark footer .back-top, .dark .about .skills .item .next {
+  color: var(--light);
+}
+
+.dark .project-item {
+  background-color: var(--dark-mood);
+  border-color: var(--dark-mood-dark);
+}
+
+.dark .hero h6 {
+  color: var(--dark-mood-purple);
+}
+
+.dark .hero .scroll p {
+  color: #c6c6c6;
+}
+
+.dark .summary .rectangle {
+  background-color: var(--dark-mood-purple);
+}
+
+.dark footer .buttons button {
+  background-color: var(--dark-mood-purple-light);
+  color: #000;
 }
