@@ -27,6 +27,10 @@ body {
   margin: 0;
 }
 
+.w-150px{
+  width: 150px;
+}
+
 body {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -57,6 +61,11 @@ nav .links a, nav .links span {
 nav .theme {
   color: var(--dark);
   font-size: 20px;
+}
+
+nav .menu svg {
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .hero {
@@ -208,7 +217,6 @@ footer .buttons button {
 
 footer h6 {
   font-size: 18px;
-  margin-bottom: 0;
 }
 
 footer p {
@@ -254,6 +262,7 @@ footer .back-top svg {
 
 .about .qoute img {
   border-radius: 3px;
+  max-width: 100%;
 }
 
 .about .skills, .about .interests {
@@ -357,4 +366,73 @@ footer .back-top svg {
 .dark footer .buttons button {
   background-color: var(--dark-mood-purple-light);
   color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .hero h1, .projects h1, .about h1 {
+    font-size: 32px;
+  }
+  .about h1 {
+    margin-bottom: 40px;
+  }
+  .hero h6 {
+    font-size: 25px;
+  }
+  .hero .buttons button {
+    font-size: 14px !important;
+    padding: 4px;
+  }
+  .project-item h4 {
+    font-size: 20px;
+  }
+  .project-item p {
+    font-size: 14px;
+  }
+
+  .projects, .summary, .footer, .about {
+    margin-top: 40px;
+  }
+  .about .skills, .about .interests {
+    margin-top: 30px;
+  }
+
+  .summary p {
+    font-size: 16px;
+  }
+
+  .summary .rectangle {
+    display: none;
+  }
+  .summary img {
+    max-width: 100%;
+    right: 0;
+    top: 0;
+  }
+
+  footer h6 {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 14px;
+    margin-bottom: 0
+  }
+
+  .about h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .about .qoute p {
+    font-size: 16px;
+  }
+
+  .about .skills .item{
+    min-width: 60px;
+  }
+  .about .skills .item h6 {
+    font-size: 9px;
+  }
 }

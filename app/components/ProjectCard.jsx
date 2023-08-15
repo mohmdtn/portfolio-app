@@ -15,10 +15,10 @@ export const ProjectCard = ({ img, desc, title, lang, github, demo }) => {
   const { theme } = React.useContext(SiteContext);
   
   return (
-    <div className="col-md-6 p-md-4 p-3">
+    <div className="col-md-6 p-md-4 pb-4 p-1">
       <article className="project-item">
         <div className="">
-          <Image src={img} width={500} height={300} alt={title} />
+          <Image src={img} width={500} height={300} layout="responsive" alt={title} />
         </div>
         <section className="p-3">
           <h4>{title}</h4>
