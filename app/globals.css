@@ -51,6 +51,10 @@ nav h2 span {
   color: var(--purple-light);
 }
 
+nav h2 a {
+  all: unset;
+}
+
 nav .links a, nav .links span {
   color: var(--dark);
   text-decoration: none;
@@ -366,6 +370,10 @@ footer .back-top svg {
 .dark footer .buttons button {
   background-color: var(--dark-mood-purple-light);
   color: #000;
+}
+
+.dark .MuiPaper-root, .dark .MuiPaper-elevation, .dark .MuiPaper-elevation16, .dark .MuiDrawer-paper, .dark .MuiDrawer-paperAnchorRight {
+  background-color: var(--dark);
 }
 
 @media screen and (max-width: 768px) {

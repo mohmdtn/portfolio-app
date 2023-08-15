@@ -15,7 +15,7 @@ export const Nav = () => {
 
   return (
     <nav>
-      <h2 className="fw-bold mb-0">ms<span>.</span></h2>
+      <h2 className="fw-bold mb-0"><Link href="/">ms<span>.</span></Link></h2>
       <div className="d-md-flex d-none">
         <div className="links">
           <Button color="secondary"><Link href="/">Home</Link></Button>
