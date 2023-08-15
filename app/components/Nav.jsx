@@ -7,7 +7,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import { RiMenu3Fill } from "react-icons/ri";
 import { SiteContext } from "../context/site-context";
 import React from "react";
-import { Sidebar } from "./sidebar";
+import { Sidebar } from "./Sidebar";
 
 
 export const Nav = () => {
