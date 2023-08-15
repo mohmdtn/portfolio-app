@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Button from "@mui/material/Button";
 import Stack from '@mui/material/Stack';
+import { animateScroll as scroll } from 'react-scroll';
 
 import { BsGithub, BsLinkedin, BsEnvelope } from "react-icons/bs";
 import { AiOutlineArrowUp } from "react-icons/ai";
@@ -18,7 +19,7 @@ export const Footer = () => {
       </section>
       <section className="d-flex justify-content-between align-items-center my-5">
         <h6>Shoot me email to chat about my work or just like to say hey 👋</h6>
-        <Button color="secondary" className="back-top">Back To Top <AiOutlineArrowUp /></Button>
+        <Button color="secondary" className="back-top" onClick={() => scroll.scrollToTop({smooth: true})}>Back To Top <AiOutlineArrowUp /></Button>
       </section>
       <section>
         <p>© Coded by Mohammad Taghinasab 💜</p>

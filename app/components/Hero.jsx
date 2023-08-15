@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 import Link from "next/link";
 import Image from "next/image";
 import { SiteContext } from "../context/site-context";
+import { animateScroll as scroll } from 'react-scroll';
 
 import { BsGithub, BsLinkedin, BsArrowDownCircle } from "react-icons/bs";
 
@@ -26,19 +27,19 @@ export const Hero = () => {
             <Stack direction="row" spacing={2}>
               <Link href="https://github.com/mohmdtn" target="_blank"><Button sx={theme == "light" ? { bgcolor:"#7C3AED" } : { bgcolor:"#DDD6FE", color: "#000" }} variant="contained" color="secondary" className="py-2 icon"><BsGithub /></Button></Link>
               <Link href="https://linkedin.com/in/mohammad-taghinasab" target="_blank"><Button sx={theme == "light" ? { bgcolor:"#7C3AED" } : { bgcolor:"#DDD6FE", color: "#000" }} variant="contained" color="secondary" className="py-2 icon"><BsLinkedin /></Button></Link>
-              <Link href=""><Button sx={theme == "light" ? {borderColor: "#7C3AED", color: "#000"} : {borderColor: "#737373", color: "#fff"}} variant="outlined" color="secondary">GET IN TOUCH</Button></Link>
+              <Button onClick={() => scroll.scrollToBottom()} sx={theme == "light" ? {borderColor: "#7C3AED", color: "#000"} : {borderColor: "#737373", color: "#fff"}} variant="outlined" color="secondary">GET IN TOUCH</Button>
               <Button onClick={() => setIsResumeModal(true)} sx={theme == "light" ? {borderColor: "#7C3AED", color: "#000"} : {borderColor: "#737373", color: "#fff"}} variant="outlined" color="secondary">RESOME</Button>
             </Stack>
           </div>
         </div>
 
         {/* hero picture */}
-        <div className="col-md-5 pe-0 d-flex flex-column justify-content-center align-items-center">
+        <div className="col-md-5 pe-0 d-md-flex d-none flex-column justify-content-center align-items-center">
           <Image src={"/pictures/hero.png"} width={450} height={450} layout="responsive" alt="mohammad taghinasab" />
         </div>
 
         {/* scroll */}
-        <div className="scroll">
+        <div className="scroll" onClick={() => scroll.scrollTo(500)}>
           <p>scroll</p>
           <BsArrowDownCircle />
         </div>
