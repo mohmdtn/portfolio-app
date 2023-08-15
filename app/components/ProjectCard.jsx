@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 
 import { FaLaravel, FaReact, FaBootstrap } from "react-icons/fa";
-import { SiNextdotjs, SiMui, SiPhp, SiMysql, SiMongodb, SiJavascript, SiCss3, SiTailwindcss } from "react-icons/si";
+import { SiNextdotjs, SiMui, SiPhp, SiMysql, SiMongodb, SiJavascript, SiCss3, SiTailwindcss, SiJquery } from "react-icons/si";
 
 export const ProjectCard = ({ img, desc, title, lang, github, demo }) => {
   return (
@@ -24,6 +24,7 @@ export const ProjectCard = ({ img, desc, title, lang, github, demo }) => {
             {lang.mui && <Tooltip title="Material ui" placement="top"><SiMui /></Tooltip>}
             {lang.tailwind && <Tooltip title="Tailwind css" placement="top"><SiTailwindcss /></Tooltip>}
             {lang.js && <Tooltip title="JavaScript" placement="top"><SiJavascript /></Tooltip>}
+            {lang.jq && <Tooltip title="jQuery" placement="top"><SiJquery /></Tooltip>}
             {lang.bootstrap && <Tooltip title="Bootstrap" placement="top"><FaBootstrap /></Tooltip>}
             {lang.php && <Tooltip title="Php" placement="top"><SiPhp /></Tooltip>}
             {lang.mysql && <Tooltip title="MySql" placement="top"><SiMysql /></Tooltip>}
