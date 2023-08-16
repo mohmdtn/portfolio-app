@@ -13,12 +13,12 @@ export const Sidebar = () => {
 
   return (
     <Drawer anchor={"right"} open={isSidebarOpen} onClose={() => setisSidebarOpen(false)} >
-      <nav className="d-flex flex-column">
+      <nav className="d-flex flex-column" onClick={() => setisSidebarOpen(false)}>
         <div className="d-flex flex-column links">
-          <Button className="w-150px" color="secondary"><Link href="/">Home</Link></Button>
-          <Button className="w-150px" color="secondary"><Link href="/projects">Projects</Link></Button>
-          <Button className="w-150px" color="secondary"><Link href="/about">About</Link></Button>
-          <Button className="w-150px" onClick={() => setIsResumeModal(true)} color="secondary"><span>Resume</span></Button>
+          <Button className="w-170px" color="secondary"><Link href="/">Home</Link></Button>
+          <Button className="w-170px" color="secondary"><Link href="/projects">Projects</Link></Button>
+          <Button className="w-170px" color="secondary"><Link href="/about">About</Link></Button>
+          <Button className="w-170px" onClick={() => setIsResumeModal(true)} color="secondary"><span>Resume</span></Button>
         </div>
         {
           theme == "light"

@@ -18,7 +18,7 @@ export const Summary = () => {
         </div>
         <div className="col-md-6 position-relative d-flex justify-content-end align-items-center overflow-hidden">
           <div className="rectangle"></div>
-          <Image src="/pictures/about.jpg" alt="mohammad taghinasab" width={369} height={500} />
+          <Image src="/pictures/about.jpg" alt="mohammad taghinasab" layout="responsive" width={369} height={500} />
         </div>
       </div>
     </section>

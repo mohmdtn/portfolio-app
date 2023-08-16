@@ -14,8 +14,8 @@ export const ResumeModal = () => {
         <section className="box p-4">
             <h1>choose one of these</h1>
             <Stack direction="row" spacing={2}>
-              <a href="/resume/resume-fn.pdf" download><Button sx={theme == "light" ? { bgcolor:"#7C3AED" } : { bgcolor:"#DDD6FE", color: "#000" }} variant="contained" color="secondary">Persian Resume</Button></a>
-              <a href="/resume/resume-en.pdf" download><Button sx={theme == "light" ? { bgcolor:"#7C3AED" } : { bgcolor:"#DDD6FE", color: "#000" }} variant="contained" color="secondary">English Resume</Button></a>
+              <a href="/resume/resume-fa.pdf" download="resume-fa.pdf"><Button sx={theme == "light" ? { bgcolor:"#7C3AED" } : { bgcolor:"#DDD6FE", color: "#000" }} variant="contained" color="secondary">Persian Resume</Button></a>
+              <a href="/resume/resume-en.pdf" download="resume-fa.pdf"><Button sx={theme == "light" ? { bgcolor:"#7C3AED" } : { bgcolor:"#DDD6FE", color: "#000" }} variant="contained" color="secondary">English Resume</Button></a>
             </Stack>
         </section>
     </Dialog>

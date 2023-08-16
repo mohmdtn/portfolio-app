@@ -5,7 +5,7 @@ export const Qoute = () => {
     <section className="qoute">
       <div className="row m-0">
         <div className="col-md-5 px-0 px-md-2 text-center">
-          <Image src="/pictures/about.jpg" alt="mohammad taghinasab" width={369} height={500} />
+          <Image src="/pictures/about.jpg" alt="mohammad taghinasab" layout="responsive" width={369} height={500} />
         </div>
         <div className="col-md-7 px-0 px-md-2">
           <h3>Qoute...</h3>

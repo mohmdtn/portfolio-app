@@ -27,8 +27,8 @@ body {
   margin: 0;
 }
 
-.w-150px{
-  width: 150px;
+.w-170px{
+  width: 170px;
 }
 
 body {
@@ -193,6 +193,7 @@ nav .menu svg {
 .summary img {
   border-radius: 5px;
   position: relative;
+  max-width: 357px;
   z-index: 2;
   right: 20px;
   top: 20px;
@@ -336,46 +337,44 @@ footer .back-top svg {
   text-align: center;
 }
 
+
+/* dark mood */
 .dark {
   background-color: var(--dark-mood);
   color: var(--light);
 }
-
 .dark .box {
   background-color: var(--dark-mood-dark);
   color: var(--light);
 }
-
 .dark nav .links a, .dark nav .links span, .dark nav .theme, .dark .hero .scroll svg, .dark .project-item p, .dark .project-item .languages svg, .dark footer .back-top, .dark .about .skills .item .next {
   color: var(--light);
 }
-
 .dark .project-item {
   background-color: var(--dark-mood);
   border-color: var(--dark-mood-dark);
 }
-
 .dark .hero h6 {
   color: var(--dark-mood-purple);
 }
-
 .dark .hero .scroll p {
   color: #c6c6c6;
 }
-
 .dark .summary .rectangle {
   background-color: var(--dark-mood-purple);
 }
-
 .dark footer .buttons button {
   background-color: var(--dark-mood-purple-light);
   color: #000;
 }
-
 .dark .MuiPaper-root, .dark .MuiPaper-elevation, .dark .MuiPaper-elevation16, .dark .MuiDrawer-paper, .dark .MuiDrawer-paperAnchorRight {
   background-color: var(--dark);
 }
+/* dark mood */
 
+
+
+/* mobile view */
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
@@ -384,11 +383,25 @@ footer .back-top svg {
   .hero h1, .projects h1, .about h1 {
     font-size: 32px;
   }
+  .projects h1, .about h1 {
+    margin-bottom: 25px;
+  }
+  .hero {
+    height: auto;
+    height: calc(100vh - 40px);
+  }
+  .hero .scroll {
+    display: none;
+  }
+  .hero img {
+    max-width: 500px;
+  }
   .about h1 {
     margin-bottom: 40px;
   }
   .hero h6 {
     font-size: 25px;
+    margin-bottom: 8px;
   }
   .hero .buttons button {
     font-size: 14px !important;
@@ -400,18 +413,15 @@ footer .back-top svg {
   .project-item p {
     font-size: 14px;
   }
-
   .projects, .summary, .footer, .about {
     margin-top: 40px;
   }
   .about .skills, .about .interests {
-    margin-top: 30px;
+    margin-top: 50px;
   }
-
   .summary p {
     font-size: 16px;
   }
-
   .summary .rectangle {
     display: none;
   }
@@ -420,7 +430,6 @@ footer .back-top svg {
     right: 0;
     top: 0;
   }
-
   footer h6 {
     font-size: 16px;
   }
@@ -428,19 +437,27 @@ footer .back-top svg {
     font-size: 14px;
     margin-bottom: 0
   }
-
   .about h3 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin: 10px 0 5px;
   }
   .about .qoute p {
     font-size: 16px;
+    margin-bottom: 0;
   }
-
   .about .skills .item{
     min-width: 60px;
   }
   .about .skills .item h6 {
     font-size: 9px;
+  }
+  footer {
+    margin-top: 60px;
+  }
+  .box h1 {
+    font-size: 28px;
+  }
+  .box button {
+    font-size: 12px !important;
   }
 }

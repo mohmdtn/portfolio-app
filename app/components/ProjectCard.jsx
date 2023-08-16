@@ -18,7 +18,7 @@ export const ProjectCard = ({ img, desc, title, lang, github, demo }) => {
     <div className="col-md-6 p-md-4 pb-4 p-1">
       <article className="project-item">
         <div className="">
-          <Image src={img} width={500} height={300} layout="responsive" alt={title} />
+          <Image src={img} width={500} height={300} layout="responsive" alt={title} placeholder="blur" blurDataURL={img} />
         </div>
         <section className="p-3">
           <h4>{title}</h4>

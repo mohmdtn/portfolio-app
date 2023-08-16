@@ -22,7 +22,7 @@ export const Footer = () => {
         <Button color="secondary" className="back-top" onClick={() => scroll.scrollToTop({smooth: true})}>Back To Top <AiOutlineArrowUp /></Button>
       </section>
       <section>
-        <p>© Coded by Mohammad Taghinasab 💜</p>
+        <p>© Coded by Mohammad Taghinasab</p>
       </section>
     </footer>
   );
