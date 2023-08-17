@@ -59,7 +59,7 @@ nav .links a, nav .links span {
   color: var(--dark);
   text-decoration: none;
   text-transform: capitalize;
-  margin: 0 15px;
+  padding: 0 15px;
 }
 
 nav .theme {
