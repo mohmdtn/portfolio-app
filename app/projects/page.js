@@ -57,7 +57,7 @@ const projects = [
     desc: "This is a charity project aimed at providing bread for needy people. The project was developed for a private company and designed to be implemented at a national level.",
     lang: { bootstrap: true, js: true, jq: true, laravel: true, mysql: true },
     github: "https://github.com/mohmdtn/p80m-backend",
-    demo: "p80m.com",
+    demo: "/",
   },
   {
     img: "/pictures/projects/music.png",
