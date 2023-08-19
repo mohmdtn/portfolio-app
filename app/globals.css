@@ -39,6 +39,8 @@ body {
   text-align: left;
   padding: 30px;
   background-color: var(--light);
+  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 nav {
@@ -73,6 +75,8 @@ nav .menu svg {
 }
 
 .hero {
+  height: -webkit-calc(100vh - 68.5px);
+  height: -moz-calc(100vh - 68.5px);
   height: calc(100vh - 68.5px);
 }
 
@@ -182,7 +186,7 @@ nav .menu svg {
 }
 
 .summary .rectangle {
-  width: 369px;
+  width: 357px;
   height: 500px;
   background-color: var(--purple-light);
   border-radius: 5px;
@@ -337,8 +341,23 @@ footer .back-top svg {
   text-align: center;
 }
 
+.ball {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #9954ff2e 0%, #fafafa00 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
 
 /* dark mood */
+.dark .ball {
+  background: radial-gradient(circle, #bc90fe1d 0%, #1717175e 75%);
+}
 .dark {
   background-color: var(--dark-mood);
   color: var(--light);
@@ -388,7 +407,6 @@ footer .back-top svg {
   }
   .hero {
     height: auto;
-    height: calc(100vh - 40px);
   }
   .hero .scroll {
     display: none;
@@ -459,5 +477,8 @@ footer .back-top svg {
   }
   .box button {
     font-size: 12px !important;
+  }
+  .ball {
+    display: none;
   }
 }
