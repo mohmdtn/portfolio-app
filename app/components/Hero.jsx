@@ -39,9 +39,11 @@ export const Hero = () => {
         </div>
 
         {/* scroll */}
-        <div className="scroll" onClick={() => scroll.scrollTo(500)}>
-          <p>scroll</p>
-          <BsArrowDownCircle />
+        <div className="scroll">
+          <div onClick={() => scroll.scrollTo(800)}>
+            <p>scroll</p>
+            <BsArrowDownCircle />
+          </div>
         </div>
 
       </div>

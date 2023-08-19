@@ -22,8 +22,7 @@ function animate() {
   if (ballY >= footerY){
     ball.style.top = footerY + "px";
   }
-
-
+  
   requestAnimationFrame(animate);
 }
 animate();
@@ -31,11 +30,4 @@ animate();
 document.addEventListener("mousemove", function (event) {
   mouseX = event.pageX;
   mouseY = event.pageY;
-
-  // if (mouseY > footerY){
-
-  // }
-  // else {
-  //   ball.style.display = "inline-block";
-  // }
 });
