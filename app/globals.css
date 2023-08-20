@@ -39,7 +39,6 @@ body {
   text-align: left;
   padding: 30px;
   background-color: var(--light);
-  /* overflow-x: hidden; */
   overflow-x: hidden;
 }
 
