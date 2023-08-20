@@ -35,7 +35,7 @@ export const Hero = () => {
 
         {/* hero picture */}
         <div className="col-md-5 pe-0 d-flex flex-column justify-content-center align-items-center order-first order-md-last">
-          <Image src={"/pictures/hero.png"} width={450} height={610} layout="responsive" alt="mohammad taghinasab" />
+          <Image src={"/pictures/hero.png"} width={450} height={618} layout="responsive" alt="mohammad taghinasab" />
         </div>
 
         {/* scroll */}

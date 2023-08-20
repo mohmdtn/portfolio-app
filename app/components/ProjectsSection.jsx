@@ -8,7 +8,7 @@ const projects = [
     title: "Laravel Shop Project",
     desc: "This is an e-commerce website built with the latest version of Laravel, encompassing a wide range of features. The aim has been to provide advanced capabilities and incorporate new, professional-grade functionalities suitable for large-scale websites.",
     lang: { laravel: true, bootstrap: true, mysql: true, js: true, jq:true },
-    github: "/",
+    github: "https://github.com/mohmdtn/laravel-shop",
     demo: "/",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     title: "Mafia Cafe",
     desc: "This project is designed to introduce a café and create events for playing the game Mafia.",
     lang: { bootstrap: true, react: true, js: true, css: true },
-    github: "https://github.com/mohmdtn/react-shop",
+    github: "https://github.com/mohmdtn/mafia",
     demo: "/",
   },
 ];
