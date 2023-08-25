@@ -39,7 +39,7 @@ export const Hero = () => {
         </div>
 
         {/* scroll */}
-        <div className="scroll">
+        <div className="scroll order-last pt-4 pt-md-0">
           <div onClick={() => scroll.scrollTo(800)}>
             <p>scroll</p>
             <BsArrowDownCircle />

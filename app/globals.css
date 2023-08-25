@@ -413,7 +413,9 @@ footer .back-top svg {
     height: auto;
   }
   .hero .scroll {
-    display: none;
+    /* display: none; */
+    position: relative;
+    bottom: 0;
   }
   .hero img {
     max-width: 500px;
