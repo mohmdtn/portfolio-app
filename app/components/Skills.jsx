@@ -24,6 +24,10 @@ export const Skills = () => {
                 <h6>bootstrap</h6>
             </div>
             <div className="item">
+                <h5 className="tailwind"><SiTailwindcss /></h5>
+                <h6>tailwind</h6>
+            </div>
+            <div className="item">
                 <h5 className="js"><SiJavascript /></h5>
                 <h6>javascript</h6>
             </div>
