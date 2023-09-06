@@ -54,6 +54,7 @@ nav h2 span {
 
 nav h2 a {
   all: unset;
+  cursor: pointer;
 }
 
 nav .links a, nav .links span {
