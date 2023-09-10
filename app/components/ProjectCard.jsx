@@ -24,18 +24,18 @@ export const ProjectCard = ({ img, desc, title, lang, github, demo }) => {
           <h4>{title}</h4>
           <p>{desc}</p>
           <div className="languages">
-            {lang.laravel && <Tooltip title="laravel" placement="top"><FaLaravel /></Tooltip>}
-            {lang.react && <Tooltip title="React Js" placement="top"><FaReact /></Tooltip>}
-            {lang.next && <Tooltip title="Next Js" placement="top"><SiNextdotjs /></Tooltip>}
-            {lang.mui && <Tooltip title="Material ui" placement="top"><SiMui /></Tooltip>}
-            {lang.tailwind && <Tooltip title="Tailwind css" placement="top"><SiTailwindcss /></Tooltip>}
-            {lang.js && <Tooltip title="JavaScript" placement="top"><SiJavascript /></Tooltip>}
-            {lang.jq && <Tooltip title="jQuery" placement="top"><SiJquery /></Tooltip>}
-            {lang.bootstrap && <Tooltip title="Bootstrap" placement="top"><FaBootstrap /></Tooltip>}
-            {lang.php && <Tooltip title="Php" placement="top"><SiPhp /></Tooltip>}
-            {lang.mysql && <Tooltip title="MySql" placement="top"><SiMysql /></Tooltip>}
-            {lang.mongo && <Tooltip title="MongoDB" placement="top"><SiMongodb /></Tooltip>}
-            {lang.css && <Tooltip title="css" placement="top"><SiCss3 /></Tooltip>}
+            {lang.laravel && <Tooltip title="laravel" placement="top"> <FaLaravel /> </Tooltip>}
+            {lang.react && <Tooltip title="React Js" placement="top"> <FaReact /> </Tooltip>}
+            {lang.next && <Tooltip title="Next Js" placement="top"> <SiNextdotjs /> </Tooltip>}
+            {lang.mui && <Tooltip title="Material ui" placement="top"> <SiMui /> </Tooltip>}
+            {lang.tailwind && <Tooltip title="Tailwind css" placement="top"> <SiTailwindcss /> </Tooltip>}
+            {lang.js && <Tooltip title="JavaScript" placement="top"> <SiJavascript /> </Tooltip>}
+            {lang.jq && <Tooltip title="jQuery" placement="top"> <SiJquery /> </Tooltip>}
+            {lang.bootstrap && <Tooltip title="Bootstrap" placement="top"><FaBootstrap /> </Tooltip>}
+            {lang.php && <Tooltip title="Php" placement="top"> <SiPhp /> </Tooltip>}
+            {lang.mysql && <Tooltip title="MySql" placement="top"> <SiMysql /> </Tooltip>}
+            {lang.mongo && <Tooltip title="MongoDB" placement="top"> <SiMongodb /> </Tooltip>}
+            {lang.css && <Tooltip title="css" placement="top"> <SiCss3 /> </Tooltip>}
           </div>
           <div className="links">
             <Stack direction="row" spacing={2}>
