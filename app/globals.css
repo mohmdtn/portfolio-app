@@ -374,14 +374,14 @@ footer .back-top svg {
   background-color: var(--dark-mood-dark);
   color: var(--light);
 }
-.dark nav .links a, .dark nav .links span, .dark .hero .scroll svg, .dark .project-item p, .dark .project-item .languages svg, .dark footer .back-top, .dark .about .skills .item .next {
+.dark nav .links a, .dark nav .links span, .dark nav .theme, .dark .hero .scroll svg, .dark .project-item p, .dark .project-item .languages svg, .dark footer .back-top, .dark .about .skills .item .next {
   color: var(--light);
 }
 .dark .project-item {
   background-color: var(--dark-mood);
   border-color: var(--dark-mood-dark);
 }
-.dark .hero h6, .dark nav .theme {
+.dark .hero h6, .dark .sidebar .theme {
   color: var(--dark-mood-purple);
 }
 .dark .hero .scroll p {

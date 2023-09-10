@@ -13,7 +13,7 @@ export const Sidebar = () => {
 
   return (
     <Drawer anchor={"right"} open={isSidebarOpen} onClose={() => setisSidebarOpen(false)} >
-      <nav className="d-flex flex-column" onClick={() => setisSidebarOpen(false)}>
+      <nav className="d-flex sidebar flex-column" onClick={() => setisSidebarOpen(false)}>
         <div className="d-flex flex-column links">
           <Button className="w-170px" color="secondary"><Link href="/">Home</Link></Button>
           <Button className="w-170px" color="secondary"><Link href="/projects">Projects</Link></Button>
