@@ -32,6 +32,10 @@ export const Skills = () => {
                 <h6>javascript</h6>
             </div>
             <div className="item">
+                <h5 className="ts"><SiTypescript /></h5>
+                <h6>typescript</h6>
+            </div>
+            <div className="item">
                 <h5 className="jq"><SiJquery /></h5>
                 <h6>jquery</h6>
             </div>
@@ -42,10 +46,6 @@ export const Skills = () => {
             <div className="item">
                 <h5 className="mui"><SiMui /></h5>
                 <h6>material ui</h6>
-            </div>
-            <div className="item">
-                <h5 className="ts"><SiTypescript /></h5>
-                <h6>typescript</h6>
             </div>
             <div className="item">
                 <h5 className="next"><SiNextdotjs /></h5>
