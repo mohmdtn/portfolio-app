@@ -1,5 +1,5 @@
 import { FaLaravel, FaReact, FaBootstrap, FaSass } from "react-icons/fa";
-import { SiNextdotjs, SiMui, SiPhp, SiMysql, SiMongodb, SiJavascript, SiCss3, SiTailwindcss, SiHtml5, SiJquery } from "react-icons/si";
+import { SiNextdotjs, SiMui, SiPhp, SiMysql, SiMongodb, SiJavascript, SiCss3, SiTailwindcss, SiHtml5, SiJquery, SiTypescript } from "react-icons/si";
 
 export const Skills = () => {
   return (
@@ -42,6 +42,10 @@ export const Skills = () => {
             <div className="item">
                 <h5 className="mui"><SiMui /></h5>
                 <h6>material ui</h6>
+            </div>
+            <div className="item">
+                <h5 className="ts"><SiTypescript /></h5>
+                <h6>typescript</h6>
             </div>
             <div className="item">
                 <h5 className="next"><SiNextdotjs /></h5>

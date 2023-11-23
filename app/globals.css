@@ -319,6 +319,9 @@ footer .back-top svg {
 .about .skills .item .js {
   color: #f0db4f;
 }
+.about .skills .item .ts {
+  color: #2f74c0;
+}
 .about .skills .item .jq {
   color: #205d96;
 }
